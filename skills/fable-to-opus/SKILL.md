@@ -47,8 +47,8 @@ The six patterns live in [`packs/`](../../packs/). Read the pack before recommen
 4. **Input fidelity** — re-extract fuzzy critical values at high fidelity. [pack 4](../../packs/04-input-fidelity.md)
 5. **Confirm before irreversible** — confirm assumptions before large/irreversible work; scale to
    reversibility, not confidence. [pack 5](../../packs/05-irreversible-confirm.md)
-6. **Rhythm & section-end briefing** — quiet burst then one consolidated briefing; never quiet over
-   verification or risk. [pack 6](../../packs/06-rhythm-and-briefing.md)
+6. **Rhythm & section-end briefing** — quiet burst then one consolidated briefing, and close open
+   choices with a recommended default; never quiet over verification or risk. [pack 6](../../packs/06-rhythm-and-briefing.md)
 
 ## What to tell the user honestly
 

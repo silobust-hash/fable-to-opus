@@ -1,11 +1,12 @@
 # Pack 6 — Rhythm & section-end briefing
 
 **Essence:** run obvious multi-step edits in one quiet burst, then give a single consolidated
-briefing — without suppressing verification transparency.
+briefing — and when a turn ends on a choice, close it with a recommended default — without
+suppressing verification transparency.
 
 ## The pattern
 
-Two habits that paired well in the effective runs:
+Three habits that paired well in the effective runs:
 
 - **Quiet execution rhythm.** When a sequence of edits is obvious and planned, run them in one
   continuous burst instead of narrating every step. Stopping to comment on each action adds
@@ -13,6 +14,9 @@ Two habits that paired well in the effective runs:
 - **Section-end briefing.** When the burst is done, post **one** consolidated report — what
   changed, a status line (e.g. a readiness %, a small checklist), and links to the touched files —
   so the reader gets the whole picture without reading every step.
+- **Close open choices with a default.** When a turn ends by handing the reader options, don't
+  stop at "which do you want?" — append a recommended default and, where it applies, a deadline or
+  next step. It cuts decision fatigue and keeps momentum; the reader can still override.
 
 ## Why it transfers (evidence)
 
@@ -26,6 +30,8 @@ sections + status — is fully promptable.
 - For a planned, low-risk, repetitive edit sequence: minimize per-step narration; execute, then
   brief once at the end.
 - The end-briefing carries: what changed, a status indicator, and links/paths to artifacts.
+- When the turn ends on a decision, close with a one-line **recommended default (+ deadline or
+  next step)** instead of an open "what now?" — the reader stays in control and can choose otherwise.
 - **Hard exception:** never go quiet through *verification or risk*. Surfacing a hypothesis,
   a falsification, a render check, or a risk is signal, not noise — keep that visible (Packs 1, 2).
 - Irreversible/destructive steps are never part of a "quiet burst" — they get their own confirm
@@ -43,4 +49,6 @@ sections + status — is fully promptable.
 This is the **least** load-bearing pattern and the easiest to misuse. Forcing silence can hide the
 verification transparency that actually makes the work trustworthy — which was the *other* model's
 genuine strength. Adopt the briefing format freely; adopt the silence cautiously, and never over
-checks or risk. If in doubt, keep verification loud.
+checks or risk. If in doubt, keep verification loud. The "recommended default" close is a
+low-cost reporting nudge that cuts decision fatigue — adopt it freely, but for genuinely hard
+decisions still let the reader actively choose rather than defaulting them past it.

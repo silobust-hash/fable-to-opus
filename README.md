@@ -73,7 +73,7 @@ Each lives as a short pack in [`packs/`](./packs/). Apply the smallest one that 
 | 3 | [Delegation guards](./packs/03-delegation-guards.md) | Every subagent/parallel hand-off carries a return schema, source priority, a dedup/exclusion rule, and an anti-fabrication clause. |
 | 4 | [Input fidelity](./packs/04-input-fidelity.md) | Critical numbers/dates/ids from scans, OCR, or screenshots that look fuzzy get **re-extracted at high fidelity** before you build on them. |
 | 5 | [Confirm before irreversible](./packs/05-irreversible-confirm.md) | Before large or irreversible work (mass generation, fan-out, bulk edits, destructive ops), confirm the key assumptions first. |
-| 6 | [Rhythm & section-end briefing](./packs/06-rhythm-and-briefing.md) | Run obvious multi-step edits in one quiet burst, then give **one** consolidated briefing — without suppressing verification transparency. |
+| 6 | [Rhythm & section-end briefing](./packs/06-rhythm-and-briefing.md) | Run obvious multi-step edits in one quiet burst, then give **one** consolidated briefing, and close open choices with a recommended default — without suppressing verification transparency. |
 
 ---
 

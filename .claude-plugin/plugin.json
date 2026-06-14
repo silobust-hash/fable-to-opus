@@ -1,6 +1,6 @@
 {
   "name": "fable-to-opus",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An adapt-first playbook that helps Opus (or any Claude model) pick up the work habits that made Fable effective — render-level verification, hypothesis-driven debugging, delegation guards, input fidelity, confirm-before-irreversible, and execution rhythm. It does NOT auto-inject rules or fake model capability. Its core skill audits YOUR existing CLAUDE.md, skills, and harness, then proposes where each habit belongs — so you adapt instead of blindly copying.",
   "author": { "name": "silobust-hash" },
   "keywords": ["harness", "verification", "completion", "opus", "fable", "agentic", "playbook", "adapt"],
