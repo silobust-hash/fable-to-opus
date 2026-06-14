@@ -182,6 +182,10 @@ Fable-5 across real production work — a grant-submission business plan, QA of 
 established Opus workflow. The patterns, and the honest *"what does not transfer"* findings,
 come from that lived experience, not from theory.
 
+## Acknowledgements
+
+Thanks to **[fablize](https://github.com/fivetaku/fablize)** by **[@fivetaku](https://github.com/fivetaku)** (MIT) — an independent take on the same question after Fable's retirement, built from a controlled Fable-5 vs Opus-4.8 comparison. Made separately, the two projects **independently converged on the same #1 finding: verification grounding — see the rendered output before calling it done.** fablize's deterministic enforcement (hooks + a multi-story verification gate) is sharper than this repo's advisory approach, and it directly inspired adding a real early-stop hook to the author's own harness. Worth a look — and a ⭐.
+
 ## License
 
 MIT — see [LICENSE](./LICENSE). Use freely, adapt to your own harness, no warranty.

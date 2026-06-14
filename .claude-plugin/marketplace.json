@@ -3,7 +3,7 @@
   "owner": { "name": "silobust-hash" },
   "metadata": {
     "description": "fable-to-opus — an adapt-first playbook that helps any Claude model pick up Fable's effective work habits, by auditing your own harness instead of force-injecting rules",
-    "version": "0.1.2"
+    "version": "0.1.3"
   },
   "plugins": [
     {

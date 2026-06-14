@@ -170,6 +170,10 @@ bash setup/uninstall.sh                            # clone 시 (레포 루트에
 여기 담긴 패턴과 *"이식되지 않는 것"*이라는 정직한 결론은 이론이 아니라 그 실제 경험에서
 나왔습니다.
 
+## 감사의 말
+
+**[fablize](https://github.com/fivetaku/fablize)** (by **[@fivetaku](https://github.com/fivetaku)**, MIT) 에 감사드립니다 — Fable 종료 후 같은 질문을 독립적으로 다룬 프로젝트로, Fable-5 vs Opus-4.8 통제 비교에서 출발했습니다. 따로 만들어졌는데도 두 프로젝트는 **1순위 결론에 똑같이 수렴했습니다 — verification grounding(렌더 결과를 직접 보고 완료).** fablize의 결정론적 강제(훅 + 멀티스토리 검증 게이트)는 이 레포의 조언형 접근보다 날카롭고, 저자 하네스에 실제 early-stop 훅을 더하는 직접적 계기가 됐습니다. 한 번 보시고 ⭐도 눌러주세요.
+
 ## 라이선스
 
 MIT — [LICENSE](./LICENSE) 참고. 자유롭게 쓰고, 네 하네스에 맞게 적응시키고, 무보증.
