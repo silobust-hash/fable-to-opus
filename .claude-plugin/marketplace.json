@@ -3,13 +3,13 @@
   "owner": { "name": "silobust-hash" },
   "metadata": {
     "description": "fable-to-opus — an adapt-first playbook that helps any Claude model pick up Fable's effective work habits, by auditing your own harness instead of force-injecting rules",
-    "version": "0.1.1"
+    "version": "0.1.2"
   },
   "plugins": [
     {
       "name": "fable-to-opus",
       "source": "./",
-      "description": "Adapt-first, not blind-install. Ships six portable work-method patterns distilled from a 31MB Fable-5-vs-Opus-4.8 transcript comparison, plus a skill that audits YOUR CLAUDE.md / skills / harness and proposes where each pattern belongs. Honest about what does NOT transfer (most tool-count differences were role/phase confounds, not model superiority).",
+      "description": "Adapt-first, not blind-install. Six portable work-method patterns distilled from a short, intensive Fable-5 production run measured against the author's established Opus workflow — directional field notes from one practitioner, not a benchmark. Ships a skill that audits YOUR CLAUDE.md / skills / harness and proposes where each pattern belongs. Honest about what does NOT transfer (most tool-count differences were role/phase confounds, not model superiority).",
       "category": "workflow"
     }
   ]

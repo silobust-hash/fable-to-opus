@@ -16,8 +16,8 @@ it), not to trust that "all checks passed."
 
 ## Why it transfers (evidence)
 
-This is the headline finding of the comparison, and the most robust one (it held even when the
-two models worked the *same* defect, so it isn't a role/phase confound). One model declared a
+This is the headline finding of the comparison, and the one we trust most (it held even when the
+two models worked the *same* defect, so it's the hardest to dismiss as a role/phase confound). One model declared a
 document done because it passed schema + integrity validation — and was wrong; the overlap was
 only visible on screen. The other resolved it by actually rendering and viewing the output. The
 gap was not *how much* verification (the code-level checks were plentiful) but *what was being

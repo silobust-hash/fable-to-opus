@@ -4,14 +4,16 @@
 
 A small, honest playbook for getting Opus (or any current Claude model) to pick up
 the **work habits** that made Fable feel so effective — verification, completion,
-and investigation as *procedure*.
+and investigation as *procedure*. *(Fable was a Claude model we worked alongside on real
+cases; when it was retired, the work moved to Opus — and the question became which of its
+habits were actually portable.)*
 
 It is **not** a magic switch, and it is **not** a force-install. Its whole point is the
-opposite: it helps you **adapt** a handful of verified habits into **your own** setup.
+opposite: it helps you **adapt** a handful of field-tested habits into **your own** setup.
 
 > *Built from the real Fable-5 working records of **Park Sillo (박실로)**, a 19-year certified
 > labor attorney and head of **Handong Labor Law Firm (한동노무법인)** — distilled from actual
-> project work with Fable, not from theory.*
+> production work, not from theory (see [how it was derived](#how-it-was-derived-evidence)).*
 
 [Korean / 한국어 → README.ko.md](./README.ko.md)
 
@@ -47,17 +49,19 @@ harness — instead of dumping rules on top of it. That's the intended way to us
 
 ## Why this exists
 
-Fable, in side-by-side work on the same project, felt like it *finished* things — it kept
-a tight execution rhythm, drove multi-step edits to the end, and reported in clean
-section-end summaries. When Fable became unavailable and the work moved to Opus, the
-question was simple: **which of those habits are actually portable by prompt, and which
-were never about the model at all?**
+For a short, intensive window, Fable-5 was put on real production work — a business plan
+written for an actual grant submission, QA across **500+ published blog posts**, content
+audits over **8 publishing channels** (including the firm's website), and a full pass over
+the author's own Claude Code plugins, skills, and harness. Next to the author's established
+**Opus** workflow on the same kinds of tasks, Fable *felt* like it **finished** things: a
+tight execution rhythm, multi-step edits driven to the end, clean section-end summaries.
 
-So the two models' transcripts on the *same* project were parsed and compared (see
-[docs/ANALYSIS.md](./docs/ANALYSIS.md)). The result is sobering and useful: **some habits
-transfer cleanly, several apparent differences were just role/phase confounds, and a few
-are model-internal and can't be prompted at all.** This repo ships only the part that
-actually transfers — and says so honestly.
+When Fable became unavailable, the question was simple: **which of those habits are actually
+portable by prompt, and which were never about the model at all?** So the transcripts from
+that window were parsed and compared (see [docs/ANALYSIS.md](./docs/ANALYSIS.md)). The result
+is sobering and useful: **some habits transfer cleanly, several apparent differences were just
+role/phase confounds, and a few are model-internal and can't be prompted at all.** This repo
+ships only the part that actually transfers — and says so honestly.
 
 A harness cannot raise a model's ceiling. It can make the model reach its *own* ceiling
 more reliably, by turning verification and completion into procedure. When the ceiling
@@ -65,13 +69,13 @@ itself is the blocker, no prompt fixes it.
 
 ---
 
-## The six portable patterns (verified)
+## The patterns — six portable, plus a 0th meta-rule
 
 Each lives as a short pack in [`packs/`](./packs/). Apply the smallest one that fits the task.
 
 | # | Pattern | One line |
 |---|---------|----------|
-| 0 | [Adapt-first](./packs/00-adapt-first.md) | Audit your own harness; add only what's missing, where it belongs. **Read before all others.** |
+| 0 | [Adapt-first](./packs/00-adapt-first.md) | Audit your own harness; add only what's missing, where it belongs. **Meta-rule — read first; not one of the six.** |
 | 1 | [Render verification](./packs/01-render-verification.md) | Things humans look at (docs, slides, HTML, SVG, charts, UIs) are "done" only after you **view the rendered result** — schema/lint/build passing is integrity, not visual correctness. |
 | 2 | [Investigation by hypotheses](./packs/02-investigation-hypotheses.md) | Don't lock onto the first root cause. Form 2+ hypotheses, falsify each with evidence, keep the survivor. |
 | 3 | [Delegation guards](./packs/03-delegation-guards.md) | Every subagent/parallel hand-off carries a return schema, source priority, a dedup/exclusion rule, and an anti-fabrication clause. |
@@ -86,7 +90,7 @@ Each lives as a short pack in [`packs/`](./packs/). Apply the smallest one that 
 This is half the value of the analysis. Do not chase these:
 
 - **Tool-count "productivity."** "It made more edits / spawned more subagents" was mostly a
-  **role/phase confound** — the models were given different stretches of the same project.
+  **role/phase confound** — the models were given different stretches of the same work.
   Reading raw tool counts as model merit is a mistake.
 - **"Just start faster, ask less."** Skipping confirmation looked decisive, but it was tied
   to *which phase* a model was handed. Pushed onto irreversible work, it produces wrong
@@ -100,15 +104,21 @@ This is half the value of the analysis. Do not chase these:
 
 ## How it was derived (evidence)
 
-- **Source:** two full project transcripts (~31MB) where Fable and Opus split the *same* work
-  — a natural A/B on comparable sub-tasks.
-- **Method:** quantitative parsing (tool distribution, execution rhythm, verification rate,
-  reasoning frequency) plus a multi-agent analysis that **adversarially verified** every
-  claimed difference and **down-weighted role/phase confounds**.
-- **Headline finding (most robust, confound-low):** the decisive gap was the *endpoint of
+- **Basis:** a short, intensive run with Fable-5 across real production work — a
+  grant-submission business plan, QA of 500+ published blog posts, 8-channel content audits,
+  and a full plugin/skill/harness pass — measured against the same author's established Opus
+  workflow on the same kinds of tasks. A practitioner's A/B, not a lab study.
+- **Method:** quantitative parsing of the transcripts (tool distribution, execution rhythm,
+  verification rate, reasoning frequency) plus a multi-agent analysis that **adversarially
+  checked** every claimed difference and **down-weighted role/phase confounds**.
+- **The difference we trust most (confound-low):** the decisive gap was the *endpoint of
   verification* — passing code-level checks (schema/ZIP/lint/build) was treated as "done,"
-  while the reliable path was **viewing the actual rendered output**. That one habit is
+  while the reliable path was **viewing the actual rendered output** (it caught a budget-table
+  defect in the business plan that every code-level check had missed). That one habit is
   pattern 1.
+- **Reproducibility, honestly:** the raw transcripts contain client/case material and can't be
+  published, so the numbers aren't externally reproducible — treat them as directional field
+  notes from one practitioner, not a benchmark.
 
 Full write-up: [docs/ANALYSIS.md](./docs/ANALYSIS.md).
 
@@ -127,16 +137,21 @@ Or just read the packs. They're plain Markdown; nothing here requires installati
 
 ### Optional, opt-in: write a pointer block into your CLAUDE.md
 
+If you installed the plugin, point the script at the plugin root:
+
 ```bash
-bash setup/setup.sh local    # this project only (recommended)
-bash setup/setup.sh global   # all projects
+bash "${CLAUDE_PLUGIN_ROOT}/setup/setup.sh" local    # this project only (recommended)
+bash "${CLAUDE_PLUGIN_ROOT}/setup/setup.sh" global   # all projects
 ```
+
+If you cloned the repo instead, run it from the repo root (`bash setup/setup.sh local`).
 
 This writes a **short pointer** (not the full rules) that tells the model to run the
 adapt-first audit before borrowing any pattern. Remove it any time:
 
 ```bash
-bash setup/uninstall.sh
+bash "${CLAUDE_PLUGIN_ROOT}/setup/uninstall.sh"   # if installed via plugin
+bash setup/uninstall.sh                            # if cloned (from the repo root)
 ```
 
 There is intentionally **no always-on hook that force-injects rules** — that would
@@ -161,9 +176,11 @@ not as a paste-over.
 ## Credits & origin
 
 This repository was created by **Park Sillo (박실로)**, a 19-year certified labor attorney and
-head of **Handong Labor Law Firm (한동노무법인)**, based on his own records of working with
-Fable-5 on real projects before it became unavailable. The patterns — and the honest
-*"what does not transfer"* findings — come from that lived A/B experience, not from theory.
+head of **Handong Labor Law Firm (한동노무법인)**. It distills a short, intensive run with
+Fable-5 across real production work — a grant-submission business plan, QA of 500+ blog posts,
+8-channel content audits, and a full plugin/skill/harness pass — compared against his
+established Opus workflow. The patterns, and the honest *"what does not transfer"* findings,
+come from that lived experience, not from theory.
 
 ## License
 
