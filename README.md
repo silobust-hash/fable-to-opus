@@ -9,6 +9,10 @@ and investigation as *procedure*.
 It is **not** a magic switch, and it is **not** a force-install. Its whole point is the
 opposite: it helps you **adapt** a handful of verified habits into **your own** setup.
 
+> *Built from the real Fable-5 working records of **Park Sillo (박실로)**, a 19-year certified
+> labor attorney and head of **Handong Labor Law Firm (한동노무법인)** — distilled from actual
+> project work with Fable, not from theory.*
+
 [Korean / 한국어 → README.ko.md](./README.ko.md)
 
 ---
@@ -153,6 +157,13 @@ already cover, and proposes where the missing ones belong — as a changeset you
 not as a paste-over.
 
 ---
+
+## Credits & origin
+
+This repository was created by **Park Sillo (박실로)**, a 19-year certified labor attorney and
+head of **Handong Labor Law Firm (한동노무법인)**, based on his own records of working with
+Fable-5 on real projects before it became unavailable. The patterns — and the honest
+*"what does not transfer"* findings — come from that lived A/B experience, not from theory.
 
 ## License
 
